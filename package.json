@@ -1,0 +1,42 @@
+{
+  "name": "vite-react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "nodemon src/server/index.js -w src/server",
+    "start": "NODE_ENV=production node src/server/index.js"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "framer-motion": "^10.16.4",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.15.0",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.5.2",
+    "zod": "^3.22.2",
+    "vite-express": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "nodemon": "^3.0.1",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+  }
+}
