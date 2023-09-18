@@ -126,7 +126,11 @@ export let loginController = async (req, res) => {
             res.status(400).json(["Email field or Username field is required"]);
         }
     } catch (error) {
-        return res.status(400).json(error.issues.map((issue) => issue.message));
+        // return res.status(400).json(error.issues.map((issue) => issue.message));
+        console.log(error);
+        return res.status(400).json({
+            message: "Some error occurred while login",
+        });
     }
 };
 // LOGOUT

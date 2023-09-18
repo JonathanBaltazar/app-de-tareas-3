@@ -5,16 +5,17 @@ import cors from "cors";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
+import { PORT } from "./config.js";
+
 // ROUTES MODULES
 import authRoutes from "./routes/auth.routes.js";
 import tasksRoutes from "./routes/tasks.routes.js";
 
 let __dirname = dirname(fileURLToPath(import.meta.url));
-// console.log();
 
 let app = express();
 
-app.set("port", process.env.PORT || 3000);
+app.set("port", PORT);
 
 const whiteList = [
     "http://localhost:5173",

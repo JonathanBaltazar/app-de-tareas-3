@@ -1,10 +1,12 @@
 import mysql from "mysql2";
 
+import { DB_HOST, DB_USER, DB_PASS, DB_NAME } from "./config.js";
+
 let pool = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "test_db",
+    host: DB_HOST,
+    user: DB_USER,
+    password: DB_PASS,
+    database: DB_NAME,
     waitForConnections: true,
     connectionLimit: 10,
     maxIdle: 10,
